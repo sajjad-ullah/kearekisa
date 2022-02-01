@@ -1,0 +1,29 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Stripe Test Payment
+      </h1><p class="lead">Want to become premier member? pay here</p>
+      <form action="/users/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="pk_test_51KLspRC6Tyt0CL0kxmnCOfh8lXPSTmNLorRQl1rQbNTIiFen4I2ojId8jhPlZk5gIqbj6bw7NzYVrNrghIdFRWBb00j0rtPGvO"
+          data-amount="2500"
+          data-name="Stripe is Good"
+          data-description="Stripe Testing"
+          data-image="/img/testlogo.png"
+          data-locale="auto">
+        </script>
+        <script>
+          // Hide default stripe button
+          document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase Premium For $25</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/payment.png" alt="" class="img-fluid">
+    </div>
+  </div>
+  <img src="/uploads/myImage-1643128258546.jpg" alt="">
+</section>
